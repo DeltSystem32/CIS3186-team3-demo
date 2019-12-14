@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import CheckoutButton from "./CheckoutButton";
+import React from "react";
+// import CheckoutButton from "./CheckoutButton";
 
-function Payment(props) {
+function Products(props) {
   const layout = props.layout;
   const items = props.items;
 
-  const [paidFor, setPaidFor] = useState(false);
-  const [error, setError] = useState(null);
+  // const [paidFor, setPaidFor] = useState(false);
+  // const [error, setError] = useState(null);
+  const paidFor = false;
+  const error = null;
 
   if (paidFor) {
     return (
@@ -25,9 +27,9 @@ function Payment(props) {
       )}
       {layout}
 
-      <CheckoutButton products={items} paidFor={setPaidFor} error={setError} />
+      {/* <CheckoutButton products={items} paidFor={setPaidFor} error={setError} /> */}
     </div>
   );
 }
 
-export default Payment;
+export default Products;

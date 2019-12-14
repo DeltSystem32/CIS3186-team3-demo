@@ -25,10 +25,10 @@ const data = [
   }
 ];
 
-const paypalConfig = {
-  clientId:
-    "AZSGawP8r0Qw0yNnRzPGnTtuMZekEXYYA2FHnjQeVSZQ9YtKOMuc00yfVk2mXb5mW5NhetecGYIu3KxL",
-  currency: "EUR"
-};
+// const paypalConfig = {
+//   clientId:
+//     "AZSGawP8r0Qw0yNnRzPGnTtuMZekEXYYA2FHnjQeVSZQ9YtKOMuc00yfVk2mXb5mW5NhetecGYIu3KxL",
+//   currency: "EUR"
+// };
 
-export { data, paypalConfig };
+export { data };
