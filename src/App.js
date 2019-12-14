@@ -3,7 +3,7 @@ import "./App.css";
 import { data } from "./components/common/data.js";
 
 import Form from "./components/Form";
-import Payment from "./components/Payment";
+import Products from "./components/Products";
 
 function App() {
   function importAll(r) {
@@ -83,7 +83,7 @@ function App() {
 
   return (
     <>
-      <Payment items={PaypalItems()} layout={PaypalLayout()}></Payment>
+      <Products items={PaypalItems()} layout={PaypalLayout()}></Products>
     </>
   );
 }

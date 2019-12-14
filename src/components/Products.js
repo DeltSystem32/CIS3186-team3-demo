@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import CheckoutButton from "./CheckoutButton";
 
-function Product(props) {
+function Payment(props) {
   const layout = props.layout;
-  const product = props.product;
+  const items = props.items;
 
   const [paidFor, setPaidFor] = useState(false);
   const [error, setError] = useState(null);
@@ -25,13 +25,9 @@ function Product(props) {
       )}
       {layout}
 
-      <CheckoutButton
-        products={product}
-        paidFor={setPaidFor}
-        error={setError}
-      />
+      <CheckoutButton products={items} paidFor={setPaidFor} error={setError} />
     </div>
   );
 }
 
-export default Product;
+export default Payment;
