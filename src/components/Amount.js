@@ -35,6 +35,8 @@ class TicketAmount extends React.Component {
           Add
         </Button>
 
+        <br />
+
         <TextInput
           id={this.state.item.id}
           label="Ticket Amount"
@@ -42,6 +44,8 @@ class TicketAmount extends React.Component {
           name="ticket Amount"
           onChange={this.state.onChange}
         />
+
+        <br />
 
         <Button
           onClick={e => {

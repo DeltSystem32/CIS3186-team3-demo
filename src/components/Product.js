@@ -4,7 +4,6 @@ import CheckoutButton from "./CheckoutButton";
 function Product(props) {
   const layout = props.layout;
   const product = props.product;
-  console.log(product);
 
   const [paidFor, setPaidFor] = useState(false);
   const [error, setError] = useState(null);
@@ -19,9 +18,12 @@ function Product(props) {
 
   return (
     <div>
-      {error && <div>Uh oh, an error occurred! {error.message}</div>}
+      {error && (
+        <div style={{ color: "red", fontWeight: "bold" }}>
+          Uh oh, an error occurred! {error.message}
+        </div>
+      )}
       {layout}
-      <div />
 
       <CheckoutButton
         products={product}
