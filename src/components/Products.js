@@ -1,12 +1,8 @@
 import React from "react";
-// import CheckoutButton from "./CheckoutButton";
 
 function Products(props) {
   const layout = props.layout;
-  const items = props.items;
 
-  // const [paidFor, setPaidFor] = useState(false);
-  // const [error, setError] = useState(null);
   const paidFor = false;
   const error = null;
 
@@ -26,8 +22,6 @@ function Products(props) {
         </div>
       )}
       {layout}
-
-      {/* <CheckoutButton products={items} paidFor={setPaidFor} error={setError} /> */}
     </div>
   );
 }
