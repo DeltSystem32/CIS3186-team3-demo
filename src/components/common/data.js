@@ -25,4 +25,6 @@ const data = [
   }
 ];
 
+//TODO: config
+
 export { data };

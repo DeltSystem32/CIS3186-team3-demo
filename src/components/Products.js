@@ -3,6 +3,7 @@ import React from "react";
 function Products(props) {
   const layout = props.layout;
 
+  //TODO: useState
   const paidFor = false;
   const error = null;
 
@@ -22,6 +23,8 @@ function Products(props) {
         </div>
       )}
       {layout}
+
+      {/* TODO: Show Component*/}
     </div>
   );
 }
