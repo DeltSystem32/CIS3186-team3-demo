@@ -34,41 +34,9 @@ function App() {
     return total;
   }
 
-  function PaypalItems() {
-    if (buying.items[0] != null) {
-      var result = [];
+  //TODO: Populate Items
 
-      result.push({
-        description: "Events",
-        amount: {
-          currency_code: "EUR",
-          value: processTotal(),
-          breakdown: {
-            item_total: { currency_code: "EUR", value: processTotal() }
-          }
-        },
-        items: []
-      });
-
-      buying.items.forEach(element => {
-        var pos = data.findIndex(val => val.id === parseInt(element.id));
-        result[0].items.push({
-          name: data[pos].eventName,
-          description: data[pos].description,
-          unit_amount: {
-            currency_code: "EUR",
-            value: data[pos].price
-          },
-          quantity: element.amount
-        });
-      });
-      return result;
-    } else {
-      return { description: "nothing", price: 0 };
-    }
-  }
-
-  function PaypalLayout() {
+  function layout() {
     return (
       <Form
         data={data}
@@ -83,7 +51,8 @@ function App() {
 
   return (
     <>
-      <Products items={PaypalItems()} layout={PaypalLayout()}></Products>
+      {/* TODO: Amend Properties */}
+      <Products layout={layout()}></Products>
     </>
   );
 }

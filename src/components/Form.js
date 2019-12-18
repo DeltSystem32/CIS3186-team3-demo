@@ -108,7 +108,7 @@ class Form extends React.Component {
     return (
       <>
         <div>
-          <h1>Please add tickets to the events you wsh to participate in:</h1>
+          <h1>Please add tickets to the events you wish to participate in:</h1>
           <table id="eventTable" style={{ padding: "5px" }}>
             <tr>
               <td>Name & description</td>
