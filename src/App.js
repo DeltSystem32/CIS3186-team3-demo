@@ -64,7 +64,7 @@ function App() {
       });
       return result;
     } else {
-      return { description: "nothing", price: 0 };
+      return {};
     }
   }
 

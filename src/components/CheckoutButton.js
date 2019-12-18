@@ -6,7 +6,7 @@ export default class CheckoutButton extends Component {
   render() {
     const products = this.props.products;
 
-    if (products.description !== "nothing") {
+    if (products.length > 0) {
       return (
         <div>
           <PayPalButton
